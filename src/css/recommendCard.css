@@ -1,0 +1,44 @@
+.recommendCard{
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+        "imageRec"
+        "imageRec"
+        "imageRec"
+        "imageRec"
+        "titleRec";
+        align-content: center;
+}
+.recommendCard:hover{
+    z-index: 10;
+    transform: scale(1.1);
+}
+.recommendCard img{
+    width: 100%;
+}
+.recommendCard__image{
+    grid-area: imageRec;
+}
+.recommendCard__title{
+    grid-area: titleRec;
+}
+
+@media only screen and (max-width: 768px) {
+    .recommendCard{
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            " imageRec imageRec "
+            " imageRec imageRec "
+            " imageRec imageRec "
+            " imageRec imageRec "
+            " titleRec titleRec ";
+            align-content: center;
+    }
+}

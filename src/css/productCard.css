@@ -1,0 +1,66 @@
+.productCard{
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+        "image"
+        "image"
+        "image"
+        "image"
+        "image"
+        "title"
+        "rating"
+        "description"
+        "color"
+        "price";
+}
+.productCard:hover{
+    transform: scale(1.1);
+    z-index: 10;
+}
+.productCard img{
+    width: 100%;
+}
+.amount{
+    font-size: 20px;
+}
+.productCard__image{
+    grid-area: image;
+}
+.productCard__title{
+    grid-area: title;
+}  
+.productCard__rating{
+    grid-area: rating;
+}
+.productCard__description{
+    grid-area: description;
+}
+.productCard__color{
+    grid-area: color;
+}
+.productCard__price{
+    grid-area: price;
+}
+@media only screen and (max-width: 768px) {
+    .productCard{
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "image"
+        "image"
+        "image"
+        "image"
+        "image"
+        "title"
+        "rating"
+        "description"
+        "color"
+        "price";
+    }
+}

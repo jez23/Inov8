@@ -1,0 +1,40 @@
+.templates3366 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "col13366 col23366 col23366";
+}
+.col13366{
+    grid-area: col13366;
+}
+.col23366{
+    grid-area: col23366;
+}
+
+.templates7030 {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas: "col17030 col17030 col17030 col17030 col17030 col17030 col17030 col27030 col27030 col27030";
+}
+.col17030{
+    grid-area: col17030;
+}
+.col27030{
+    grid-area: col27030;
+}
+
+@media only screen and (max-width: 800px) {
+    .templates3366 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+            "col13366"
+            "col23366";
+    }
+    .templates7030 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+            "col17030"
+            "col27030";
+    }
+  }

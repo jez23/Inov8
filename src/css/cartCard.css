@@ -1,0 +1,48 @@
+.cartCard{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "cartImg cartTitle cartPrice cartQty cartTotal";
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    grid-gap: 10px;
+}
+.cartCard__image{
+    grid-area: cartImg;
+}
+.cartCard__title{
+    grid-area: cartTitle;
+}
+.cartCard__price{
+    grid-area: cartPrice;
+}
+.cartCard__qty{
+    grid-area: cartQty;
+}
+.cartCard__total{
+    grid-area: cartTotal;
+}
+.cartCard__image img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .cartCard{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "cartTitle cartTitle cartTitle"
+            "cartImg cartImg  cartImg"
+            "cartPrice cartQty cartTotal";
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 20px;
+        grid-gap: 10px;
+    }
+}

@@ -1,0 +1,8 @@
+@import './global.css';
+@import './header.css';
+@import './footer.css';
+@import './templates.css';
+@import './filter.css';
+@import './productCard.css';
+@import './recommendCard.css';
+@import './cartCard.css';

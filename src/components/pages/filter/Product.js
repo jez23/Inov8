@@ -29,8 +29,9 @@ const Products = () => {
                     <ProductSizes chosenProduct={chosenProduct}/>
                     <button className="btn primary" onClick={() => addToCart(chosenProduct)}>Add to cart</button>
                 </div>
+                <ProductGender chosenProduct={chosenProduct}/>
             </div>
-            <ProductGender chosenProduct={chosenProduct}/>
+          
             <div className="productPrefer">
                 <ProductPrefer/>
             </div>

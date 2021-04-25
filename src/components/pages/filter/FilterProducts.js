@@ -61,7 +61,7 @@ const FilterProducts = () => {
             </div>
             <div className="buttonArea__actions">
                 <button className="btn primary" type="submit" onClick={() => filterAndRecommend()}>Search</button>
-                <button className="btn primary right" onClick={() => resetAllButton(buttonGroup)}>Reset</button>
+                <button className="btn primary right" onClick={() => resetAllButton(buttonGroup)}>Start Over</button>
             </div>
             </div>
      

@@ -42,7 +42,7 @@ const ProductCard = ({product}) => {
             <p>{product.description}</p>
             </div>
             <div className="productCard__color">
-                <p>{product.color.length} color</p>
+                <p>{product.color.length} colour</p>
             </div>
             <div className="productCard__price">
                 <p className="amount"><strong>£{product.price}</strong></p>

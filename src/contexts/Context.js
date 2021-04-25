@@ -136,7 +136,8 @@ export function ConstProvider({children}){
             chosenSize,
             chooseOppGender,
             filterAndRecommend,
-            cart
+            cart,
+            setCart
         }}>
         {children}
         </Context.Provider>

@@ -1,7 +1,7 @@
 .cartCard{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-areas: "cartImg cartTitle cartPrice cartQty cartTotal";
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "cartImg cartTitle cartPrice cartQty cartTotal cartRemove";
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
     justify-items: center;
@@ -25,8 +25,16 @@
 .cartCard__total{
     grid-area: cartTotal;
 }
+.cartCard__remove{
+    grid-area: cartRemove;
+}
 .cartCard__image img{
     width: 100%;
+}
+.total{
+    text-align: right;
+    padding: 20px 0px 20px 0px;
+    font-size: 20px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -36,7 +44,8 @@
         grid-template-areas: 
         "cartTitle cartTitle cartTitle"
             "cartImg cartImg  cartImg"
-            "cartPrice cartQty cartTotal";
+            "cartPrice cartQty cartTotal"
+            "cartRemove cartRemove cartRemove";
         border-top: 1px solid grey;
         border-bottom: 1px solid grey;
         justify-items: center;

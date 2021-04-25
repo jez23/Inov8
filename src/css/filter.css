@@ -41,8 +41,9 @@
 }
 .productGender{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(10, 1fr);
     grid-area: genderMeta;
+    margin-bottom: 40px;
 }
 .productGender__selector{
     cursor: pointer;
@@ -147,6 +148,7 @@
 .buttonArea__actions{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 40px;
 }
 @media only screen and (max-width: 768px) {
     .buttonArea__actions{
@@ -192,6 +194,21 @@
     .prefer h3{
         text-align: center;
     }
+    .productGender{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-area: genderMeta;
+        margin-bottom: 0px;
+    }
+    .productGender{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-area: genderMeta;
+        margin-bottom: 0px;
+    }
+    .productMeta__size{
+       margin-bottom: 40px;
+    }
 }
 @media only screen and (max-width: 668px) {
     .products{
@@ -216,6 +233,7 @@
         grid-gap: 50px;
         padding: 40px;
     }
+    
 }
 @media only screen and (max-width: 1224px) and (min-width: 768px) {
     .recommendations{
@@ -240,4 +258,12 @@
             "sizeMeta";
         grid-gap: 10px;
     }
+    .productGender{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-area: genderMeta;
+        margin-bottom: 0px;
+    }
 }
+
+

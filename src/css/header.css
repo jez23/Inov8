@@ -65,6 +65,28 @@
     grid-template-columns: repeat(3, 1fr);
     align-self: center;
 }
+.basket__basket{
+    position: relative;
+}
+
+.basket__basket__count{
+    position: absolute;
+    top: -10px;
+    left:10px;
+    border-radius: 50%;
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    color: white;
+    border: 1px solid black;
+    text-align: center;
+}
+.count_container{
+    width: 20px;
+        height: 20px;
+        position: relative;
+        display: inline-block;
+}
 @media only screen and (max-width: 1284px) and (min-width:768px) {
     .header .nav ul{
         display: grid;

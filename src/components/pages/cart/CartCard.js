@@ -1,6 +1,22 @@
-import React from 'react';
+import React, { useContext , useState } from 'react';
 
-const CartCard = ({ product }) => {
+import Context from '../../../contexts/Context';
+
+const CartCard = ({ product, index }) => {
+
+    const { cart, setCart } = useContext(Context);
+
+    const removeItem = () => {
+        const newArr = [...cart];
+        if(newArr[index].quantity > 1){
+            newArr[index].quantity--
+            setCart(newArr)
+        } else{
+            newArr.splice(index, 1);
+            setCart(newArr);
+        }
+    }
+
     return (
         <div className="cartCard">
             <div className="cartCard__image">
@@ -19,6 +35,9 @@ const CartCard = ({ product }) => {
             </div>
             <div className="cartCard__total">
                 <p>Total: £{product.price * product.quantity}</p>
+            </div>
+            <div className="cartCard__remove">
+                <button className="btn secondary" onClick={() => removeItem()}>Remove</button>
             </div>
         </div>
     )

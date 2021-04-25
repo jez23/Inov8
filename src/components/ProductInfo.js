@@ -23,7 +23,7 @@ const ProductInfo = ({chosenProduct}) => {
             <p className="productInfo__stars">{stars.map((star, i) => star? <i key={`star${i}`} className="fa fa-star" aria-hidden="true"></i>: <i key={`star${i}`} className="fa fa-star-o" aria-hidden="true"></i>)}</p>
 
             
-            <p><strong>Color</strong>: {chosenProduct.color.map((color, i) => {
+            <p><strong>Colour</strong>: {chosenProduct.color.map((color, i) => {
                 return <span key={`color${i}`}>{`${color} `}</span>
             })}</p>
         </div>

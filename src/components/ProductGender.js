@@ -10,7 +10,7 @@ const ProductGender = ({ chosenProduct }) => {
     <div className="productGender">
         {chosenProduct.gender === "male" ? (
           <div>
-            <h4>Womens</h4>
+            <h5>Womens</h5>
             <div className="productGender__selector" onClick={() => chooseOppGender(chosenProduct.oppGenderId)}>
             <img
               src={`${chosenProduct.photos[0]}`}
@@ -20,7 +20,7 @@ const ProductGender = ({ chosenProduct }) => {
           </div>
         ) : (
           <div>
-            <h4>Mens</h4>
+            <h5>Mens</h5>
             <div className="productGender__selector" onClick={() => chooseOppGender(chosenProduct.oppGenderId)}>
             <img
               src={`${chosenProduct.photos[0]}`}
